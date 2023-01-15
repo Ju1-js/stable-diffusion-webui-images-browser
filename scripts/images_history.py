@@ -238,7 +238,7 @@ def create_tab(tabname):
                         
                 with gr.Column(): 
                     with gr.Row():  
-                        sort_by = gr.Radio(value="date", choices=["path name", "date", "random"], label="sort by")   
+                        sort_by = gr.Dropdown(value="date", choices=["path name", "date", "random"], label="sort by")   
                         keyword = gr.Textbox(value="", label="keyword")                 
                     with gr.Row():
                         with gr.Column():
